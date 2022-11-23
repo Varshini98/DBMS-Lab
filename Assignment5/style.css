@@ -1,0 +1,224 @@
+*{
+    transition: 0.3s;
+}
+
+input[type=text], input[type=number]
+{
+    border: none;
+    width: 300px;
+    border-bottom: 2px solid #00ff90;
+    margin: 10px 5px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+div#login, div#register
+{
+    position: relative;
+    margin: 20px auto 20px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #808080;
+}
+
+div#login *, div#register *
+{
+    padding: 4px;
+    margin: 5px 0px;    
+}
+
+div#login input[type=password], div#login input[type=email],
+div#register input[type=text], div#register input[type=email], div#register input[type=password], div#register input[type=tel]
+{
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid #00ff90;
+}
+
+div#navbar 
+{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 80px;
+    border-bottom: 2px solid #00ff90;
+    background: #fff;
+    z-index: 10;
+}
+
+    div#navbar a
+    {
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 30px;   
+        background-color: #ff6a00;
+        border-radius: 5px;
+        padding: 20px;
+        position: inherit;
+    }
+    div#navbar a:visited
+    {
+        color: #000;   
+    }
+
+div#navbar div
+{
+    float: right;
+}
+
+div#navbar div a
+{
+    background-color: #aeadad;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+
+div#body 
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    height: 100%;
+}
+
+ul.list
+{
+    list-style-type: none;
+}
+
+ul.list li
+{
+    display: inline-block;
+    margin: 10px;
+    border-left: 2px solid #00ff90;
+    padding-left: 10px;
+    background-color: #fff;
+    max-width: 300px;
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+}
+
+ul.list li, ul.list li div
+{
+    width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+}
+
+div#chats ul, div#msgs ul
+{
+    list-style-type: none;
+}
+div#chats
+{
+    float: right;
+}
+
+div#chats li
+{
+    margin: 10px 20px;
+    border-radius: 5px;
+    background-color: #ffd800;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div#msgs
+{
+    float: left;
+    padding-bottom: 60px;
+    position: fixed;
+    overflow-y: scroll;
+    height: 70%;    
+}
+
+div#msgs li
+{
+    display: block;
+    border-radius: 5px;
+    width: max-content;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    max-width: 400px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+div#msgs li p
+{
+    font-size: 10px;
+}
+div#msgs li h4
+{
+    margin: 5px;
+}
+
+div#msgs li.self
+{
+    background-color: #aeadad;
+    margin-left: 50px;
+}
+
+div#msgs li.other
+{
+    background-color: rgba(174, 173, 173, 0.5);
+}
+
+div#send
+{
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    padding-bottom: 20px;
+}
+
+div#send input[type=text]
+{
+    margin: 5px 2px 0px 20px;
+    width: 400px;
+    border: none;
+    border-bottom: 2px solid #00ff90;
+    font-size: 15px;
+}
+
+input[type=submit]
+{
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    background-color: #00ff90;
+    margin: 10px 5px;
+    
+}
+
+input[type=submit].del
+{
+    background-color: #e22626;
+}
+
+input[type=reset]
+{
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: #e22626;
+    margin: 5px 2px;
+}
+
+form#add
+{
+    padding: 10px;
+}
+
+ul.list li h3, ul.list li h4
+{
+    margin: 2px;
+}
